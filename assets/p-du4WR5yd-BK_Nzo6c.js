@@ -1,0 +1,3 @@
+import{q as r,l as s,t as i,z as a,u as d}from"./index-5Q-db5G4.js";/*!
+ * (C) Ionic http://ionicframework.com - MIT License
+ */const c=()=>{const e=window;e.addEventListener("statusTap",(()=>{r((()=>{const n=document.elementFromPoint(e.innerWidth/2,e.innerHeight/2);if(!n)return;const t=s(n);t&&new Promise((o=>i(t,o))).then((()=>{a((async()=>{t.style.setProperty("--overflow","hidden"),await d(t,300),t.style.removeProperty("--overflow")}))}))}))}))};export{c as startStatusTap};
