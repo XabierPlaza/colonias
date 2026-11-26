@@ -5,18 +5,22 @@
     <meta charset="UTF-8" />
     <!-- maximum-scale=1: sin zoom automático al escribir ni ampliaciones accidentales; el zoom de la foto lo hace la app -->
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
-    <meta name="theme-color" content="#dce3f5" />
+    <!-- color de la barra de la hora (iPhone y Android) = color de la cabecera; el iPhone lo lee al abrir la app,
+         por eso va aquí para claro y oscuro (src/datos/preferencias.ts lo ajusta si se fija un tema) -->
+    <meta name="theme-color" content="#dde4f4" media="(prefers-color-scheme: light)" data-auto="#dde4f4" />
+    <meta name="theme-color" content="#2b3249" media="(prefers-color-scheme: dark)" data-auto="#2b3249" />
     <!-- la app tiene tema claro y oscuro propios: así el navegador no la oscurece por su cuenta -->
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="./iconos/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="Colonias" />
     <title>Contador de colonias</title>
-    <script type="module" crossorigin src="./assets/index-Cl3XBWDk.js"></script>
+    <script type="module" crossorigin src="./assets/index-C5KoXsJI.js"></script>
     <link rel="stylesheet" crossorigin href="./assets/index-D-VpfPr6.css">
   <link rel="manifest" href="./manifest.webmanifest"></head>
   <body>
-    <div id="root"></div>
+    <div id="root"></div>
   </body>
 </html>
